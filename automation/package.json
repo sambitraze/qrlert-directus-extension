@@ -1,0 +1,26 @@
+{
+	"name": "directus-extension-automation",
+	"description": "Please enter a description for your extension",
+	"icon": "extension",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-hook"
+	],
+	"type": "module",
+	"directus:extension": {
+		"type": "hook",
+		"path": "../../qrlert-directus/extensions/hooks/automation/index.js",
+		"source": "src/index.js",
+		"host": "^9.22.4"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "9.22.4"
+	}
+}
