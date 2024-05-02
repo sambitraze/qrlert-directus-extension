@@ -50,7 +50,7 @@ export default ({ action, filter, schedule }, { services, getSchema }) => {
 			});;
 			// console.log('------------------------------------ fetch item! ------------------------------------');
 			// console.log(JSON.stringify(createdObject, null, 4));
-			const title = `Student data for ${createdObject.full_name} has been updated!`;
+			const title = `Student data for ${createdObject.full_name}, Class: ${createdObject.class}, Section: ${createdObject.section}, school: ${createdObject.school} has been updated!`;
 			const body = 'Data Updated';
 			// console.log('------------------------------------ notify obj! ------------------------------------');
 			const obj = {
